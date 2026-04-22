@@ -84,7 +84,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Vruddhi Capital. All rights reserved.
           </p>
           <p className="font-body text-xs text-[#444444]">
-            Udupi, India — Investing in Tomorrow
+            Udupi, Karnataka, India — Investing in Tomorrow
           </p>
         </div>
       </div>

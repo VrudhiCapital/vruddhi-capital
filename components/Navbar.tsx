@@ -43,7 +43,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3 group">
           <Image
             src="/logo.png"
-            alt="Vruddhi Capital Logo"
+            alt=" Logo"
             width={190}
             height={100}
             className="h-10 w-auto object-contain"

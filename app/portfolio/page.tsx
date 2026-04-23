@@ -1,64 +1,53 @@
+"use client";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-
-export const metadata: Metadata = {
-  title: "Portfolio",
-  description:
-    "Explore Vruddhi Capital's portfolio of mission-driven startups across consumer, services, and platform sectors in India.",
-};
+import { useState } from "react";
 
 // Replace these with real portfolio companies later
 const portfolioCompanies = [
   {
-    name: "Company One",
-    sector: "Consumer",
-    stage: "Seed",
-    description: "A brief one-line description of what this startup does.",
-    location: "Bangalore, India",
-    logo: "/logo.png", 
-  },
-  {
-    name: "Company Two",
-    sector: "Platform",
-    stage: "Series A",
-    description:
-      "A brief one-line description of what this startup does and the problem they solve.",
+    name: "Neo Wealth ",
+    sector: "Services",
+    stage: "Series B+",
+    description: "Neo Wealth Management Private Limited is a Mumbai-based wealth management and investment advisory firm that offers services like equities, mutual funds, IPOs, and portfolio management to help clients grow and manage their wealth.",
     location: "Mumbai, India",
-    
+    logo: "/Company/neo.png",
   },
   {
-    name: "Company Three",
+    name: "Advance Cable Technologies",
     sector: "Services",
-    stage: "Pre-Seed",
-    description:
-      "A brief one-line description of what this startup does and the problem they solve.",
-    location: "Hyderabad, India",
+    stage: "Series B+",
+    description: "Advance Cable Technologies is a leading manufacturer of high-quality electrical cables and wiring solutions, serving diverse industries with reliable and durable products.",
+    location: " Bashettihalli, India",
+    logo: "/advance.png",
   },
   {
-    name: "Company Four",
-    sector: "Consumer",
-    stage: "Seed",
-    description:
-      "A brief one-line description of what this startup does and the problem they solve.",
-    location: "Chennai, India",
-  },
-  {
-    name: "Company Five",
+    name: "FusionStays",
     sector: "Platform",
-    stage: "Series A",
-    description:
-      "A brief one-line description of what this startup does and the problem they solve.",
-    location: "Delhi, India",
+    stage: "Seed",
+    description: "FusionStays is a travel and hospitality platform that connects travelers with verified homestays across offbeat destinations, offering curated and authentic local experiences.",
+    location: "Kolkata, West Bengal, India",
+    logo: "/FusionStays.webp",
   },
   {
-    name: "Company Six",
-    sector: "Services",
-    stage: "Pre-Seed",
-    description:
-      "A brief one-line description of what this startup does and the problem they solve.",
-    location: "Pune, India",
+    name: "Clinking Goblets ",
+    sector: "--",
+    stage: "aaa",
+    description: "aaaa",
+    location: "aaa, India",
+    logo: "",
   },
+  {
+    name: "Yutori Designs",
+    sector: "Services",
+    stage: "Seed",
+    description: "Yutori Designs is a premium interior design and turnkey project execution firm specializing in residential and commercial spaces across Coastal Karnataka.",
+    location: "Udupi, India",
+    logo: "/Yutori-logo.png",
+  },
+ 
 ];
 
 const sectorColors: Record<string, string> = {
@@ -68,6 +57,17 @@ const sectorColors: Record<string, string> = {
 };
 
 export default function PortfolioPage() {
+
+  // ── THIS IS WHAT WAS MISSING ──
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filteredCompanies =
+    activeFilter === "All"
+      ? portfolioCompanies
+      : portfolioCompanies.filter(
+          (company) => company.sector === activeFilter
+        );
+
   return (
     <>
       {/* ── PAGE HERO ── */}
@@ -90,27 +90,28 @@ export default function PortfolioPage() {
       <section className="py-16 pb-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
-          {/* Sector filter hint */}
+          {/* ── FILTER BUTTONS ── */}
           <div className="flex flex-wrap gap-3 mb-12">
             {["All", "Consumer", "Services", "Platform"].map((filter) => (
-              <span
+              <button
                 key={filter}
-                className={`font-body text-xs tracking-widest uppercase px-4 py-2 border transition-colors duration-300 cursor-pointer ${filter === "All"
-                    ? "border-brand-orange text-brand-orange"
+                onClick={() => setActiveFilter(filter)}
+                className={`font-body text-xs tracking-widest uppercase px-4 py-2 border transition-colors duration-300 cursor-pointer ${
+                  activeFilter === filter
+                    ? "border-brand-orange text-brand-orange bg-brand-orange/5"
                     : "border-[#2A2A2A] text-brand-gray-light hover:border-brand-orange/40"
-                  }`}
+                }`}
               >
                 {filter}
-              </span>
+              </button>
             ))}
           </div>
 
-          {/* Company cards */}
+          {/* ── COMPANY CARDS ── */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {portfolioCompanies.map((company, i) => (
+            {filteredCompanies.map((company, i) => (
               <div key={i} className="card-dark p-8 group flex flex-col">
 
-                {/* Company initial avatar */}
                 {/* Company logo */}
                 <div className="w-28 h-14 mb-5 flex items-center">
                   {company.logo ? (
@@ -140,8 +141,9 @@ export default function PortfolioPage() {
 
                 <div className="flex items-center justify-between pt-6 border-t border-[#1E1E1E]">
                   <span
-                    className={`font-body text-xs tracking-widest uppercase px-3 py-1 border ${sectorColors[company.sector]
-                      }`}
+                    className={`font-body text-xs tracking-widest uppercase px-3 py-1 border ${
+                      sectorColors[company.sector]
+                    }`}
                   >
                     {company.sector}
                   </span>
@@ -157,17 +159,24 @@ export default function PortfolioPage() {
             ))}
           </div>
 
+          {/* Empty state */}
+          {filteredCompanies.length === 0 && (
+            <div className="text-center py-24">
+              <p className="body-text">No companies in this sector yet.</p>
+            </div>
+          )}
+
           {/* Note */}
           <p className="body-text text-sm text-center mt-16 text-[#444444]">
-            * Portfolio companies are representational. Contact us for full
-            details.
+            * Portfolio companies are representational. Contact us for full details.
           </p>
         </div>
       </section>
 
       {/* ── JOIN PORTFOLIO CTA ── */}
       <section className="py-24 bg-[#080808] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5"
+        <div
+          className="absolute inset-0 opacity-5"
           style={{
             backgroundImage:
               "linear-gradient(#C4621D 1px, transparent 1px), linear-gradient(90deg, #C4621D 1px, transparent 1px)",

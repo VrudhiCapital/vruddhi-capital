@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Image
               src="/logo.png"
-              alt="Vruddhi Capital"
+              alt="Logo"
               width={140}
               height={50}
               className="h-10 w-auto object-contain mb-6"

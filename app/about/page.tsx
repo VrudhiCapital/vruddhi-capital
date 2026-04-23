@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -103,15 +104,21 @@ export default function AboutPage() {
             <div className="relative">
               <div className="card-dark p-10">
                 <div className="flex items-start gap-6 mb-8">
-                  <div className="w-12 h-12 border border-brand-orange flex items-center justify-center flex-shrink-0">
-                    <span className="font-display text-brand-orange text-xl">V</span>
+                  <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <Image
+                      src="/Logo-About-.png"
+                      alt="Vruddhi Capital"
+                      width={48}
+                      height={48}
+                      className="object-contain w-full h-full"
+                    />
                   </div>
                   <div>
                     <h3 className="font-body text-xs tracking-widest uppercase text-brand-orange mb-2">
                       What Vruddhi Means
                     </h3>
                     <p className="body-text text-base">
-                      Vruddhi (वृद्धि) means growth in Sanskrit. It reflects
+                      Vruddhi means growth in Sanskrit. It reflects
                       our core belief — that with the right support, great
                       founders can create extraordinary and lasting growth.
                     </p>

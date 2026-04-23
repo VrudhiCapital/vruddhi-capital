@@ -21,7 +21,7 @@ const portfolioCompanies = [
     stage: "Series B+",
     description: "Advance Cable Technologies is a leading manufacturer of high-quality electrical cables and wiring solutions, serving diverse industries with reliable and durable products.",
     location: " Bashettihalli, India",
-    logo: "/advance.png",
+    logo: "/Company/advance.png",
   },
   {
     name: "FusionStays",
@@ -29,7 +29,7 @@ const portfolioCompanies = [
     stage: "Seed",
     description: "FusionStays is a travel and hospitality platform that connects travelers with verified homestays across offbeat destinations, offering curated and authentic local experiences.",
     location: "Kolkata, West Bengal, India",
-    logo: "/FusionStays.webp",
+    logo: "/Company/FusionStays.webp",
   },
   {
     name: "Clinking Goblets ",

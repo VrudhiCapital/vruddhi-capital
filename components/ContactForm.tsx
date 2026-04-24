@@ -207,7 +207,7 @@ export default function ContactForm() {
       {/* Website */}
       <div>
         <label className="font-body text-xs tracking-widest uppercase text-brand-orange block mb-2">
-          Website / Deck Link
+          Website
         </label>
         <input
           type="url"

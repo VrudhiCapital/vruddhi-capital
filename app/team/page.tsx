@@ -10,36 +10,36 @@ export const metadata: Metadata = {
 
 const teamMembers = [
   {
-    name: "Team Member Name",
-    role: "Founder & Managing Partner",
-    bio: "Brief background about this team member — their experience, expertise, and what they bring to portfolio founders. Keep it concise and authentic.",
+    name: "Roshan Bava",
+    role: "Co-founder & Investor, Vruddhi Capital",
+    bio: [
+      "Roshan Bava is an entrepreneur-turned-investor with a proven track record of building and scaling technology-led businesses. He is the co-founder of Niveus Solutions, which grew into a leading cloud engineering firm before being acquired by NTT Data in 2025.",
+      "At Vruddhi Capital, Roshan brings an operator's lens to investing — backing founders who are building with both ambition and responsibility. His approach combines first-principles thinking, capital efficiency, and long-term value creation.",
+      "He is deeply committed to supporting ventures that align growth with sustainability, ethical execution, and real-world impact. Roshan works closely with founders through key inflection points, helping them scale with discipline while staying anchored to purpose.",
+    ],
     focus: ["Consumer", "Fintech"],
     photo: "/team/member-one.jpg",
     initials: "TM",
     linkedin: "https://www.linkedin.com/in/yourprofile",
   },
   {
-    name: "Team Member Name",
-    role: "Founder & Managing Partner",
-    bio: "Brief background about this team member — their experience, expertise, and what they bring to portfolio founders. Keep it concise and authentic.",
-    focus: ["Consumer", "Fintech"],
-    photo: "/team/member-one.jpg",
+    name: "Rashmi George",
+    role: "Co-founder & Investor, Vruddhi Capital",
+    bio: [
+      "Rashmi George is a serial entrepreneur and investor known for building scalable, execution-led technology businesses. She co-founded Niveus Solutions, which became one of India’s leading cloud services firms prior to its acquisition by NTT Data.",
+      "At Vruddhi Capital, Rashmi partners with founders to build enduring businesses that balance commercial strength with long - term relevance.Her investment approach emphasizes product- market fit, execution discipline, and organizational clarity, while also encouraging companies to integrate sustainable practices and human - centric design from the ground up.",
+      "She is particularly drawn to ventures that aim to create lasting value beyond financial returns—whether through responsible innovation, community impact, or environmentally conscious growth.Rashmi takes a hands - on, founder - first approach, working closely with teams to shape resilient, thoughtful companies built to stand the test of time.",
+    ],
+focus: ["Consumer", "Fintech"],
+  photo: "/team/member-one.jpg",
     initials: "TM",
-    linkedin: "https://www.linkedin.com/in/yourprofile",
+      linkedin: "https://www.linkedin.com/in/yourprofile",
   },
-  {
-    name: "Team Member Name",
-    role: "Founder & Managing Partner",
-    bio: "Brief background about this team member — their experience, expertise, and what they bring to portfolio founders. Keep it concise and authentic.",
-    focus: ["Consumer", "Fintech"],
-    photo: "/team/member-one.jpg",
-    initials: "TM",
-    linkedin: "https://www.linkedin.com/in/yourprofile",
-  },
+
 ];
 
 const advisors = [
- {
+  {
     name: "Advisor Name",
     role: "Advisor",
     expertise: "Domain expertise area",
@@ -47,7 +47,7 @@ const advisors = [
     photo: "/team/advisor-one.jpg",
     linkedin: "https://www.linkedin.com/in/yourprofile",
   },
- {
+  {
     name: "Advisor Name",
     role: "Advisor",
     expertise: "Domain expertise area",
@@ -77,7 +77,7 @@ export default function TeamPage() {
 
       <section className="py-16 pb-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {teamMembers.map((member, i) => (
               <div key={i} className="card-dark p-8 group flex flex-col">
                 <div className="w-20 h-20 rounded-full border border-brand-orange/40 overflow-hidden mb-6 group-hover:border-brand-orange transition-colors duration-300 flex items-center justify-center flex-shrink-0">
@@ -100,14 +100,14 @@ export default function TeamPage() {
                     {member.name}
                   </h3>
                   {member.linkedin && (
-                    
-                     <a href={member.linkedin}
+
+                    <a href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-brand-gray-light hover:text-brand-orange transition-colors duration-300 flex-shrink-0 ml-3"
                     >
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                       </svg>
                     </a>
                   )}
@@ -116,7 +116,17 @@ export default function TeamPage() {
                   {member.role}
                 </p>
                 <div className="orange-line mb-6" />
-                <p className="body-text text-sm mb-6 flex-grow">{member.bio}</p>
+                <div className="flex flex-col gap-3 mb-6 flex-grow">
+                  {Array.isArray(member.bio) ? (
+                    member.bio.map((paragraph, p) => (
+                      <p key={p} className="body-text text-sm text-justify">
+                        {paragraph}
+                      </p>
+                    ))
+                  ) : (
+                    <p className="body-text text-sm">{member.bio}</p>
+                  )}
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {member.focus.map((area, j) => (
                     <span
@@ -134,68 +144,68 @@ export default function TeamPage() {
       </section>
 
       <section className="py-24 bg-[#080808]">
-  <div className="max-w-7xl mx-auto px-6 lg:px-12">
-    <div className="text-center mb-16">
-      <div className="flex justify-center mb-8">
-        <div className="orange-line" />
-      </div>
-      <h2 className="section-heading">
-        Our
-        <span className="italic accent-text"> Advisors</span>
-      </h2>
-    </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-      {advisors.map((advisor, i) => (
-        <div key={i} className="card-dark p-6 text-center group">
-
-          {/* Photo or initials */}
-          <div className="w-16 h-16 rounded-full border border-brand-orange/30 overflow-hidden flex items-center justify-center mx-auto mb-4 group-hover:border-brand-orange transition-colors duration-300">
-            {advisor.photo ? (
-              <Image
-                src={advisor.photo}
-                alt={advisor.name}
-                width={64}
-                height={64}
-                className="w-full h-full object-cover object-top"
-              />
-            ) : (
-              <span className="font-display text-lg font-light text-brand-orange">
-                {advisor.initials}
-              </span>
-            )}
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="text-center mb-16">
+            <div className="flex justify-center mb-8">
+              <div className="orange-line" />
+            </div>
+            <h2 className="section-heading">
+              Our
+              <span className="italic accent-text"> Advisors</span>
+            </h2>
           </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {advisors.map((advisor, i) => (
+              <div key={i} className="card-dark p-6 text-center group">
 
-          {/* Name + LinkedIn */}
-          <div className="flex items-center justify-center gap-2 mb-1">
-            <h4 className="font-display text-lg font-light text-brand-off-white">
-              {advisor.name}
-            </h4>
-            {advisor.linkedin && (
-              
-               <a href={advisor.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-brand-gray-light hover:text-brand-orange transition-colors duration-300"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
-            )}
+                {/* Photo or initials */}
+                <div className="w-16 h-16 rounded-full border border-brand-orange/30 overflow-hidden flex items-center justify-center mx-auto mb-4 group-hover:border-brand-orange transition-colors duration-300">
+                  {advisor.photo ? (
+                    <Image
+                      src={advisor.photo}
+                      alt={advisor.name}
+                      width={64}
+                      height={64}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  ) : (
+                    <span className="font-display text-lg font-light text-brand-orange">
+                      {advisor.initials}
+                    </span>
+                  )}
+                </div>
+
+                {/* Name + LinkedIn */}
+                <div className="flex items-center justify-center gap-2 mb-1">
+                  <h4 className="font-display text-lg font-light text-brand-off-white">
+                    {advisor.name}
+                  </h4>
+                  {advisor.linkedin && (
+
+                    <a href={advisor.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-brand-gray-light hover:text-brand-orange transition-colors duration-300"
+                    >
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                      </svg>
+                    </a>
+                  )}
+                </div>
+
+                <p className="font-body text-xs text-brand-orange tracking-widest uppercase mb-3">
+                  {advisor.role}
+                </p>
+                <p className="font-body text-xs text-brand-gray-light">
+                  {advisor.expertise}
+                </p>
+
+              </div>
+            ))}
           </div>
-
-          <p className="font-body text-xs text-brand-orange tracking-widest uppercase mb-3">
-            {advisor.role}
-          </p>
-          <p className="font-body text-xs text-brand-gray-light">
-            {advisor.expertise}
-          </p>
-
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
@@ -214,4 +224,4 @@ export default function TeamPage() {
       </section>
     </>
   );
-}104
+} 104

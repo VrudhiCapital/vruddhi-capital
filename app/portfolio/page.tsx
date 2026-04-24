@@ -37,7 +37,7 @@ const portfolioCompanies = [
     stage: "Seed",
     description: "Clinking Goblets Celebrifi Pvt. Ltd. is a Bengaluru-based company that owns and operates the Easy Events platform, offering digital solutions for event planning, guest management, invitations, and RSVP tracking to simplify and enhance event experiences.",
     location: "Bengaluru, India",
-    logo: "",
+    logo: "/Company/clinking.png",
   },
   {
     name: "Yutori Designs",

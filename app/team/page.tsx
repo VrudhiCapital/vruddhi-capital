@@ -17,7 +17,7 @@ const teamMembers = [
       "At Vruddhi Capital, Roshan brings an operator's lens to investing — backing founders who are building with both ambition and responsibility. His approach combines first-principles thinking, capital efficiency, and long-term value creation.",
       "He is deeply committed to supporting ventures that align growth with sustainability, ethical execution, and real-world impact. Roshan works closely with founders through key inflection points, helping them scale with discipline while staying anchored to purpose.",
     ],
-    focus: ["Consumer", "Fintech"],
+    // focus: ["Consumer", "Fintech"],
     photo: "/team/member-one.jpg",
     initials: "TM",
     linkedin: "https://www.linkedin.com/in/yourprofile",
@@ -30,7 +30,7 @@ const teamMembers = [
       "At Vruddhi Capital, Rashmi partners with founders to build enduring businesses that balance commercial strength with long - term relevance.Her investment approach emphasizes product- market fit, execution discipline, and organizational clarity, while also encouraging companies to integrate sustainable practices and human - centric design from the ground up.",
       "She is particularly drawn to ventures that aim to create lasting value beyond financial returns—whether through responsible innovation, community impact, or environmentally conscious growth.Rashmi takes a hands - on, founder - first approach, working closely with teams to shape resilient, thoughtful companies built to stand the test of time.",
     ],
-focus: ["Consumer", "Fintech"],
+// focus: ["Consumer", "Fintech"],
   photo: "/team/member-one.jpg",
     initials: "TM",
       linkedin: "https://www.linkedin.com/in/yourprofile",
@@ -127,7 +127,7 @@ export default function TeamPage() {
                     <p className="body-text text-sm">{member.bio}</p>
                   )}
                 </div>
-                <div className="flex flex-wrap gap-2">
+                {/* <div className="flex flex-wrap gap-2">
                   {member.focus.map((area, j) => (
                     <span
                       key={j}
@@ -136,7 +136,7 @@ export default function TeamPage() {
                       {area}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

@@ -32,11 +32,11 @@ const portfolioCompanies = [
     logo: "/Company/FusionStays.webp",
   },
   {
-    name: "Clinking Goblets ",
-    sector: "--",
-    stage: "aaa",
-    description: "aaaa",
-    location: "aaa, India",
+    name: "Clinking Goblets Celebrifi Pvt. Ltd ",
+    sector: "Services",
+    stage: "Seed",
+    description: "Clinking Goblets Celebrifi Pvt. Ltd. is a Bengaluru-based company that owns and operates the Easy Events platform, offering digital solutions for event planning, guest management, invitations, and RSVP tracking to simplify and enhance event experiences.",
+    location: "Bengaluru, India",
     logo: "",
   },
   {

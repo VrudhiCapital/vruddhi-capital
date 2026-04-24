@@ -21,7 +21,7 @@ export default function Footer() {
               across India&apos;s emerging markets.
             </p>
             <p className="font-body text-sm text-[#555555]">
-              Based in Udupi, India
+              
             </p>
           </div>
 
@@ -58,15 +58,15 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li>
                 <a
-                  href="mailto:info@vruddhicapital.com"
+                  href="mailto:ajit@vruddhicapital.com"
                   className="font-body text-sm text-brand-gray-light hover:text-brand-orange transition-colors duration-300"
                 >
-                  info@vruddhicapital.com
+                  ajit@vruddhicapital.com
                 </a>
               </li>
               <li>
                 <p className="font-body text-sm text-brand-gray-light">
-                  Udupi, Karnataka, India
+                 
                 </p>
               </li>
               <li className="pt-4">
@@ -83,9 +83,7 @@ export default function Footer() {
           <p className="font-body text-xs text-[#444444]">
             © {new Date().getFullYear()} Vruddhi Capital. All rights reserved.
           </p>
-          <p className="font-body text-xs text-[#444444]">
-            Udupi, Karnataka, India — Investing in Tomorrow
-          </p>
+          
         </div>
       </div>
     </footer>

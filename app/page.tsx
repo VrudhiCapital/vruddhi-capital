@@ -8,13 +8,13 @@ export const metadata: Metadata = {
     "Vruddhi Capital is an investment firm based in Udupi, India. We back mission-driven startups from pre-seed to late stage across consumer, services, and platform businesses.",
 };
 
-// Stats data
-const stats = [
-  { number: "Pre-Seed", label: "to Late Stage" },
-  { number: "India", label: "Focused Markets" },
-  { number: "3", label: "Core Sectors" },
-  { number: "Long", label: "Term Value Creation" },
-];
+// // Stats data
+// const stats = [
+//   { number: "Pre-Seed", label: "to Late Stage" },
+//   { number: "India", label: "Focused Markets" },
+//   { number: "3", label: "Core Sectors" },
+//   { number: "Long", label: "Term Value Creation" },
+// ];
 
 // Investment thesis sectors
 const sectors = [
@@ -64,9 +64,9 @@ export default function HomePage() {
 
           {/* Tag line pill */}
           <div className="inline-flex items-center gap-3 border border-brand-orange/30 px-5 py-2 mb-10 animate-fade-in">
-            <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
+            <span className=" rounded-full bg-brand-orange animate-pulse" />
             <span className="font-body text-xs tracking-widest uppercase text-brand-orange">
-              Investment Firm · Udupi, India
+            Investment Firm 
             </span>
           </div>
 
@@ -74,7 +74,7 @@ export default function HomePage() {
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-light text-brand-off-white leading-none mb-8 animate-fade-up">
             Backing
             <span className="block italic text-brand-orange">
-              Mission-Driven
+              Mission-driven
             </span>
             Founders
           </h1>
@@ -107,7 +107,7 @@ export default function HomePage() {
       </section>
 
       {/* ── STATS SECTION ── */}
-      <section className="border-y border-[#1A1A1A] py-16">
+      {/* <section className="border-y border-[#1A1A1A] py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
@@ -122,7 +122,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── ABOUT SECTION ── */}
       <section className="py-24 lg:py-32">
@@ -164,7 +164,7 @@ export default function HomePage() {
                 <div className="mt-8 flex items-center gap-4">
                   <div className="orange-line" />
                   <span className="font-body text-xs tracking-widest uppercase text-brand-orange">
-                    Our Promise
+                   
                   </span>
                 </div>
               </div>

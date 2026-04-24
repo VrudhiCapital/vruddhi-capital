@@ -66,10 +66,13 @@ export default function AboutPage() {
             About
             <span className="block italic accent-text">Vruddhi Capital</span>
           </h1>
-          <p className="body-text max-w-2xl">
-            We are an investment firm rooted in Udupi, India — focused on
-            identifying and backing the next generation of mission-driven
-            founders building transformative businesses.
+          <p className="body-text max-w-2xl mb-6 text-justify">
+           Vruddhi Capital is an investment firm based in Udupi, India, focused on backing mission-driven startups with scalable business models and long-term value creation in high-impact sectors across consumer, services, and platform-driven businesses. 
+           
+          </p>
+          <p className="body-text max-w-2xl mb-6 text-justify">
+           
+           The firm focuses on identifying founders with strong execution capability and deep market understanding, particularly in underpenetrated and emerging markets. Vruddhi Capital partners with founders from the pre-seed stage through the late-stage journey of the startups.
           </p>
         </div>
       </section>
@@ -141,7 +144,7 @@ export default function AboutPage() {
             </div>
             <h2 className="section-heading">
               Our
-              <span className="italic accent-text"> Values</span>
+              <span className="italic accent-text"> Approach </span>
             </h2>
           </div>
 

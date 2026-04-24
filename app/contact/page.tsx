@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 const contactInfo = [
   {
     label: "Email",
-    value: "info@vruddhicapital.com",
-    href: "mailto:info@vruddhicapital.com",
+    value: "ajit@vruddhicapital.com",
+    href: "mailto:ajit@vruddhicapital.com",
   },
-  {
-    label: "Location",
-    value: "Udupi, Karnataka, India",
-    href: null,
-  },
+  // {
+  //   label: "Location",
+  //   value: "Udupi, Karnataka, India",
+  //   href: null,
+  // },
   {
     label: "Investment Stage",
     value: "Pre-Seed to Late Stage",

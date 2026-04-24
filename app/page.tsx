@@ -63,7 +63,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-20 text-center">
 
           {/* Tag line pill */}
-          <div className="inline-flex items-center gap-3 border border-brand-orange/30 px-5 py-2 mb-10 animate-fade-in">
+          <div className="inline-flex items-center  border border-brand-orange/30 px-5 py-2 mb-10 animate-fade-in">
             <span className=" rounded-full bg-brand-orange animate-pulse" />
             <span className="font-body text-xs tracking-widest uppercase text-brand-orange">
             Investment Firm 

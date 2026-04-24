@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 const contactInfo = [
   {
     label: "Email",
-    value: "hello@vruddhicapital.com",
-    href: "mailto:hello@vruddhicapital.com",
+    value: "info@vruddhicapital.com",
+    href: "mailto:info@vruddhicapital.com",
   },
   {
     label: "Location",

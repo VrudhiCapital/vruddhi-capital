@@ -45,7 +45,7 @@ const portfolioCompanies = [
     stage: "Seed",
     description: "Yutori Designs is a premium interior design and turnkey project execution firm specializing in residential and commercial spaces across Coastal Karnataka.",
     location: "Udupi, India",
-    logo: "/Yutori-logo.png",
+    logo: "/Company/Yutori-logo.png",
   },
  
 ];

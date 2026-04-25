@@ -173,13 +173,10 @@ export default function ContactForm() {
             className="form-input"
           >
             <option value="" disabled>Select sector</option>
-            <option value="Consumer">Consumer</option>
+            <option value="Consumer">Products</option>
+            <option value="Platform">Platforms</option>
             <option value="Services">Services</option>
-            <option value="Platform">Platform</option>
-            <option value="Fintech">Fintech</option>
-            <option value="Healthtech">Healthtech</option>
-            <option value="Edtech">Edtech</option>
-            <option value="SaaS">SaaS</option>
+            
             <option value="Other">Other</option>
           </select>
         </div>

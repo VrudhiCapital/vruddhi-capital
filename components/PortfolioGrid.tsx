@@ -55,8 +55,8 @@ const portfolioCompanies = [
 ];
 
 const sectorColors: Record<string, string> = {
-  Consumer: "text-blue-400 border-blue-400/30 bg-blue-400/5",
-  Platform: "text-purple-400 border-purple-400/30 bg-purple-400/5",
+  Products: "text-blue-400 border-blue-400/30 bg-blue-400/5",
+  Platforms: "text-purple-400 border-purple-400/30 bg-purple-400/5",
   Services: "text-green-400 border-green-400/30 bg-green-400/5",
 };
 
@@ -75,7 +75,7 @@ export default function PortfolioGrid() {
     <>
       {/* Filter buttons */}
       <div className="flex flex-wrap gap-3 mb-12">
-        {["All", "Consumer", "Services", "Platform"].map((filter) => (
+        {["All", "Products", "Platforms", "Services"].map((filter) => (
           <button
             key={filter}
             onClick={() => setActiveFilter(filter)}

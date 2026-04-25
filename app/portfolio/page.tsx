@@ -7,6 +7,33 @@ import { useState } from "react";
 
 // Replace these with real portfolio companies later
 const portfolioCompanies = [
+
+  {
+    name: "Advance Cable Technologies",
+    sector: "Products",
+    stage: "Series B+",
+    description: "Advance Cable Technologies is a leading manufacturer of high-quality electrical cables and wiring solutions, serving diverse industries with reliable and durable products.",
+    location: " Bashettihalli, India",
+    logo: "/Company/advance.png",
+  },
+  {
+    name: "EasyEvents",
+    sector: "Platforms",
+    stage: "Seed",
+    description: "EasyEvents is a customer-facing event management platform by Clinking Goblets Celebrifi Pvt. Ltd. that helps users discover and book event services easily. It connects customers with vendors, venues, and planners for a seamless event planning experience.",
+    location: "Bengaluru, India",
+    logo: "/Company/Easy-Events.webp",
+  },
+
+  {
+    name: "FusionStays",
+    sector: "Platforms",
+    stage: "Seed",
+    description: "FusionStays is a travel and hospitality platform that connects travelers with verified homestays across offbeat destinations, offering curated and authentic local experiences.",
+    location: "Kolkata, West Bengal, India",
+    logo: "/Company/FusionStays.webp",
+  },
+  
   {
     name: "Neo Wealth ",
     sector: "Services",
@@ -15,30 +42,9 @@ const portfolioCompanies = [
     location: "Mumbai, India",
     logo: "/Company/neo.png",
   },
-  {
-    name: "Advance Cable Technologies",
-    sector: "Services",
-    stage: "Series B+",
-    description: "Advance Cable Technologies is a leading manufacturer of high-quality electrical cables and wiring solutions, serving diverse industries with reliable and durable products.",
-    location: " Bashettihalli, India",
-    logo: "/Company/advance.png",
-  },
-  {
-    name: "FusionStays",
-    sector: "Platform",
-    stage: "Seed",
-    description: "FusionStays is a travel and hospitality platform that connects travelers with verified homestays across offbeat destinations, offering curated and authentic local experiences.",
-    location: "Kolkata, West Bengal, India",
-    logo: "/Company/FusionStays.webp",
-  },
-  {
-    name: "Clinking Goblets Celebrifi Pvt. Ltd ",
-    sector: "Services",
-    stage: "Seed",
-    description: "Clinking Goblets Celebrifi Pvt. Ltd. is a Bengaluru-based company that owns and operates the Easy Events platform, offering digital solutions for event planning, guest management, invitations, and RSVP tracking to simplify and enhance event experiences.",
-    location: "Bengaluru, India",
-    logo: "/Company/clinking.png",
-  },
+  
+  
+  
   {
     name: "Yutori Designs",
     sector: "Services",
@@ -51,8 +57,8 @@ const portfolioCompanies = [
 ];
 
 const sectorColors: Record<string, string> = {
-  Consumer: "text-blue-400 border-blue-400/30 bg-blue-400/5",
-  Platform: "text-purple-400 border-purple-400/30 bg-purple-400/5",
+ Products: "text-blue-400 border-blue-400/30 bg-blue-400/5",
+  Platforms: "text-purple-400 border-purple-400/30 bg-purple-400/5",
   Services: "text-green-400 border-green-400/30 bg-green-400/5",
 };
 
@@ -92,7 +98,7 @@ export default function PortfolioPage() {
 
           {/* ── FILTER BUTTONS ── */}
           <div className="flex flex-wrap gap-3 mb-12">
-            {["All", "Consumer", "Services", "Platform"].map((filter) => (
+            {["All", "Products", "Platforms", "Services"].map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}

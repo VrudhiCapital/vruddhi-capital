@@ -256,9 +256,9 @@ export default function HomePage() {
                 markets where the right founder can create outsized impact and
                 build long-term defensible businesses.
               </p>
-              <Link href="/about" className="btn-primary">
+              {/* <Link href="/about" className="btn-primary">
                 Our Thesis →
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

@@ -30,10 +30,24 @@ const teamMembers = [
       "At Vruddhi Capital, Rashmi partners with founders to build enduring businesses that balance commercial strength with long - term relevance.Her investment approach emphasizes product- market fit, execution discipline, and organizational clarity, while also encouraging companies to integrate sustainable practices and human - centric design from the ground up.",
       "She is particularly drawn to ventures that aim to create lasting value beyond financial returns—whether through responsible innovation, community impact, or environmentally conscious growth.Rashmi takes a hands - on, founder - first approach, working closely with teams to shape resilient, thoughtful companies built to stand the test of time.",
     ],
-// focus: ["Consumer", "Fintech"],
-  photo: "/Team/Rashmi.png",
+    // focus: ["Consumer", "Fintech"],
+    photo: "/Team/Rashmi.png",
     initials: "TM",
-      // linkedin: "https://www.linkedin.com/in/yourprofile",
+    // linkedin: "https://www.linkedin.com/in/yourprofile",
+  },
+  {
+    name: "Ajit Narayan",
+    role: "Venture Partner, Vruddhi Capital",
+    bio: [
+      "Ajit Narayan is a capital allocator, operator, and advisor with 20 years of experience across marketing, business strategy, and growth leadership. He previously served as Vice President – Global Marketing at Experion Technologies, where he worked closely with leadership on scaling the business through its growth phase and eventual acquisition.",
+      "At Vruddhi Capital, Ajit focuses on sourcing and evaluating high-potential investment opportunities, playing a key role in identifying promising startups and bringing them into the Vruddhi ecosystem.",
+      "Across his career, he has been associated with companies that have achieved significant outcomes, including MobiKwik (IPO) and Niveus Solutions (acquired). He later transitioned into capital markets as a professional trader, bringing a strong lens on risk, timing, and capital efficiency to his investing approach.",
+      "His focus is on identifying founders and businesses with the potential to compound over time, and selectively supporting portfolio companies on positioning and go-to-market with an emphasis on clarity, discipline, and sustainable growth.",
+    ],
+    // focus: ["Consumer", "Fintech"],
+    photo: "/Team/Ajith.jpeg",
+    initials: "AN",
+    // linkedin: "https://www.linkedin.com/in/yourprofile",
   },
 
 ];
@@ -77,7 +91,7 @@ export default function TeamPage() {
 
       <section className="py-16 pb-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {teamMembers.map((member, i) => (
               <div key={i} className="card-dark p-8 group flex flex-col">
                 <div className="w-20 h-20 rounded-full border border-brand-orange/40 overflow-hidden mb-6 group-hover:border-brand-orange transition-colors duration-300 flex items-center justify-center flex-shrink-0">
@@ -95,23 +109,9 @@ export default function TeamPage() {
                     </span>
                   )}
                 </div>
-                {/* <div className="flex items-center justify-between mb-1">
-                  <h3 className="font-display text-xl font-light text-brand-off-white">
-                    {member.name}
-                  </h3>
-                  {member.linkedin && (
-
-                    <a href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-brand-gray-light hover:text-brand-orange transition-colors duration-300 flex-shrink-0 ml-3"
-                    >
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                      </svg>
-                    </a>
-                  )}
-                </div> */}
+                <h3 className="font-display text-xl font-light text-brand-off-white mb-1">
+                  {member.name}
+                </h3>
                 <p className="font-body text-xs tracking-widest uppercase text-brand-orange mb-6">
                   {member.role}
                 </p>
@@ -143,7 +143,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-     
+
 
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">

@@ -145,7 +145,7 @@ export async function POST(req: NextRequest) {
               .header { border-bottom: 1px solid #C4621D; padding-bottom: 24px; margin-bottom: 32px; }
               .logo { font-size: 24px; color: #C4621D; letter-spacing: 4px; text-transform: uppercase; }
               .body-text { font-family: Arial, sans-serif; font-size: 15px; color: #8A8A8A; line-height: 1.8; margin-bottom: 20px; }
-              .highlight { color: #F5F0EB; }
+              .highlight { color: #C4621D }
               .footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid #1A1A1A; font-family: Arial, sans-serif; font-size: 11px; color: #444444; }
             </style>
           </head>

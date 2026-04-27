@@ -57,7 +57,7 @@ export async function POST(req: NextRequest) {
     // Email to Vruddhi Capital team
     await resend.emails.send({
       from: "Vruddhi Capital Website <onboarding@resend.dev>",
-      to: [process.env.CONTACT_EMAIL || "hello@vruddhicapital.com"],
+      to: [process.env.CONTACT_EMAIL || "pavansathishacharya@gmail.com"],
       subject: `New Pitch: ${startupName} — ${sector} (${stage})`,
       html: `
         <!DOCTYPE html>

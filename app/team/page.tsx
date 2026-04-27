@@ -40,13 +40,25 @@ const teamMembers = [
     role: "Venture Partner, Vruddhi Capital",
     bio: [
       "Ajit Narayan is a capital allocator, operator, and advisor with 20 years of experience across marketing, business strategy, and growth leadership. He previously served as Vice President – Global Marketing at Experion Technologies, where he worked closely with leadership on scaling the business through its growth phase and eventual acquisition.",
-      "At Vruddhi Capital, Ajit focuses on sourcing and evaluating high-potential investment opportunities, playing a key role in identifying promising startups and bringing them into the Vruddhi ecosystem.",
-      "Across his career, he has been associated with companies that have achieved significant outcomes, including MobiKwik (IPO) and Niveus Solutions (acquired). He later transitioned into capital markets as a professional trader, bringing a strong lens on risk, timing, and capital efficiency to his investing approach.",
-      "His focus is on identifying founders and businesses with the potential to compound over time, and selectively supporting portfolio companies on positioning and go-to-market with an emphasis on clarity, discipline, and sustainable growth.",
+      "Across his career, he has been associated with companies that have achieved significant outcomes, including MobiKwik (IPO) and Niveus (acquired). He later transitioned into capital markets as a professional trader, bringing a strong lens on risk, timing, and capital efficiency to his investing approach",
+      "At Vruddhi Capital, Ajit leads deal sourcing and originates high-quality investment opportunities, bringing startups with strong compounding potential into the Vruddhi ecosystem. He also selectively supports portfolio companies on positioning and go-to-market, with an emphasis on sustainable growth.",
     ],
     // focus: ["Consumer", "Fintech"],
     photo: "/Team/Ajith.jpeg",
     initials: "AN",
+    // linkedin: "https://www.linkedin.com/in/yourprofile",
+  },
+    {
+    name: "Sandeep Prabhu K",
+    role: "Head of Investments, Vruddhi Capital",
+    bio: [
+      "Sandeep Prabhu K is a finance and transaction specialist with over 16 years of experience in M&A, acquisitions, tax, and regulatory advisory. He has advised on 300+ transactions across sectors including IT, real estate, pharmaceuticals, manufacturing, and e-commerce.",
+      "He has spent his career across leading Big Four firms, most recently serving as a Director, where he worked on complex, high-value deals and strategic transactions. He is a Chartered Accountant and holds a Bachelor’s degree in Commerce.",
+      "At Vruddhi Capital, Sandeep evaluates investment opportunities from a financial, commercial, and operational perspective and is an integral part of the investment committee. Post-investment, he oversees portfolio performance, operations, and compliance, with a focus on financial discipline and ongoing monitoring of business health.",
+    ],
+    // focus: ["Consumer", "Fintech"],
+    photo: "/Team/Sandeep.jpeg",
+    initials: "SP",
     // linkedin: "https://www.linkedin.com/in/yourprofile",
   },
 
@@ -91,7 +103,7 @@ export default function TeamPage() {
 
       <section className="py-16 pb-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {teamMembers.map((member, i) => (
               <div key={i} className="card-dark p-8 group flex flex-col">
                 <div className="w-20 h-20 rounded-full border border-brand-orange/40 overflow-hidden mb-6 group-hover:border-brand-orange transition-colors duration-300 flex items-center justify-center flex-shrink-0">

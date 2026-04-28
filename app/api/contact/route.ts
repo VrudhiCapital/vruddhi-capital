@@ -172,7 +172,7 @@ export async function POST(req: NextRequest) {
                 <span class="highlight">The Vruddhi Capital Team</span>
               </p>
               <div class="footer">
-                <p>© ${new Date().getFullYear()} Vruddhi Capital · Udupi, India</p>
+                <p>© ${new Date().getFullYear()} Vruddhi Capital </p>
                 <p>You received this email because you submitted a pitch at vruddhicapital.com</p>
               </div>
             </div>

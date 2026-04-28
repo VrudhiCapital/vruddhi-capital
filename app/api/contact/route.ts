@@ -160,11 +160,9 @@ export async function POST(req: NextRequest) {
                 <span class="highlight"> ${startupName}</span> and our team will review it carefully.
               </p>
               <p class="body-text">
-  If there is a potential fit, we will get back to you within
-  <span class="highlight"> 5–7 business days</span>. If you face any issues with the form, 
-  feel free to drop a mail to 
-  <a href="mailto:ajit@vruddhicapital.com" style="color:#C4621D;">ajit@vruddhicapital.com</a>
-</p>
+                If there is a potential fit, we will get back to you within
+                <span class="highlight"> 5–7 business days</span>. We appreciate your patience.
+              </p>
               <p class="body-text">
                 In the meantime, feel free to explore our portfolio and learn more about our
                 investment thesis at <a href="https://vruddhicapital.com" style="color:#C4621D;">vruddhicapital.com</a>.

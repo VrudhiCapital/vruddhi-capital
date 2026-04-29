@@ -65,8 +65,8 @@ export default function HomePage() {
           {/* Tag line pill */}
           <div className="inline-flex items-center  border border-brand-orange/30 px-20 py-5 mb-10 animate-fade-in">
             <span className=" rounded-full bg-brand-orange animate-pulse" />
-            <span className=" font-body text-[30px] font-bold font-body text-xs tracking-widest uppercase text-brand-orange">
-            Investment Firm 
+            <span className="font-body text-[40px] font-semi-bold tracking-widest uppercase text-brand-orange">
+              Investment Firm
             </span>
           </div>
 
@@ -164,7 +164,7 @@ export default function HomePage() {
                 <div className="mt-8 flex items-center gap-4">
                   <div className="orange-line" />
                   <span className="font-body text-xs tracking-widest uppercase text-brand-orange">
-                   
+
                   </span>
                 </div>
               </div>

@@ -35,19 +35,19 @@ const teamMembers = [
     initials: "TM",
     // linkedin: "https://www.linkedin.com/in/yourprofile",
   },
-  {
-    name: "Ajit Narayan",
-    role: "Venture Partner, Vruddhi Capital",
-    bio: [
-      "Ajit Narayan is a capital allocator, operator, and advisor with 20 years of experience across marketing, business strategy, and growth leadership. He previously served as Vice President – Global Marketing at Experion Technologies, where he worked closely with leadership on scaling the business through its growth phase and eventual acquisition.",
-      "Across his career, he has been associated with companies that have achieved significant outcomes, including MobiKwik (IPO) and Niveus (acquired). He later transitioned into capital markets as a professional trader, bringing a strong lens on risk, timing, and capital efficiency to his investing approach",
-      "At Vruddhi Capital, Ajit leads deal sourcing and originates high-quality investment opportunities, bringing startups with strong compounding potential into the Vruddhi ecosystem. He also selectively supports portfolio companies on positioning and go-to-market, with an emphasis on sustainable growth.",
-    ],
-    // focus: ["Consumer", "Fintech"],
-    photo: "/Team/Ajith.jpeg",
-    initials: "AN",
-    // linkedin: "https://www.linkedin.com/in/yourprofile",
-  },
+  // {
+  //   name: "Ajit Narayan",
+  //   role: "Venture Partner, Vruddhi Capital",
+  //   bio: [
+  //     "Ajit Narayan is a capital allocator, operator, and advisor with 20 years of experience across marketing, business strategy, and growth leadership. He previously served as Vice President – Global Marketing at Experion Technologies, where he worked closely with leadership on scaling the business through its growth phase and eventual acquisition.",
+  //     "Across his career, he has been associated with companies that have achieved significant outcomes, including MobiKwik (IPO) and Niveus (acquired). He later transitioned into capital markets as a professional trader, bringing a strong lens on risk, timing, and capital efficiency to his investing approach",
+  //     "At Vruddhi Capital, Ajit leads deal sourcing and originates high-quality investment opportunities, bringing startups with strong compounding potential into the Vruddhi ecosystem. He also selectively supports portfolio companies on positioning and go-to-market, with an emphasis on sustainable growth.",
+  //   ],
+  //   // focus: ["Consumer", "Fintech"],
+  //   photo: "/Team/Ajith.jpeg",
+  //   initials: "AN",
+  //   // linkedin: "https://www.linkedin.com/in/yourprofile",
+  // },
     {
     name: "Sandeep Prabhu K",
     role: "Head of Investments, Vruddhi Capital",
@@ -103,9 +103,9 @@ export default function TeamPage() {
 
       <section className="py-16 pb-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {teamMembers.map((member, i) => (
-              <div key={i} className="card-dark p-8 group flex flex-col">
+              <div key={i} className="card-dark p-6 group flex flex-col">
                 <div className="w-20 h-20 rounded-full border border-brand-orange/40 overflow-hidden mb-6 group-hover:border-brand-orange transition-colors duration-300 flex items-center justify-center flex-shrink-0">
                   {member.photo ? (
                     <Image

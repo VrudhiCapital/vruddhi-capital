@@ -67,12 +67,12 @@ export default function AboutPage() {
             <span className="block italic accent-text">Vruddhi Capital</span>
           </h1>
           <p className="body-text max-w-2xl mb-6 text-justify">
-           Vruddhi Capital is an investment firm based in Udupi, India, focused on backing mission-driven startups with scalable business models and long-term value creation in high-impact sectors across consumer, services, and platform-driven businesses. 
-           
+            Vruddhi Capital is an investment firm based in Udupi, India, focused on backing mission-driven startups with scalable business models and long-term value creation in high-impact sectors across consumer, services, and platform-driven businesses.
+
           </p>
           <p className="body-text max-w-2xl mb-6 text-justify">
-           
-           The firm focuses on identifying founders with strong execution capability and deep market understanding, particularly in underpenetrated and emerging markets. Vruddhi Capital partners with founders from the pre-seed stage through the late-stage journey of the startups.
+
+            The firm focuses on identifying founders with strong execution capability and deep market understanding, particularly in underpenetrated and emerging markets. Vruddhi Capital partners with founders from the pre-seed stage through the late-stage journey of the startups.
           </p>
         </div>
       </section>
@@ -107,12 +107,12 @@ export default function AboutPage() {
             <div className="relative">
               <div className="card-dark p-10">
                 <div className="flex items-start gap-6 mb-8">
-                  <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
+                  <div className="w-26 h-20 flex items-center justify-center flex-shrink-0">
                     <Image
                       src="/Logo-About-.png"
                       alt="Vruddhi Capital"
-                      width={48}
-                      height={48}
+                      width={100}
+                      height={80}
                       className="object-contain w-full h-full"
                     />
                   </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {values.map((value, i) => (
               <div key={i} className="card-dark p-8 group">
-                <span className="font-display text-4xl text-brand-orange/20 group-hover:text-brand-orange/40 transition-colors duration-300 font-light">
+                <span className="font-display text-4xl text-brand-orange/80 group-hover:text-brand-orange/100 transition-colors duration-300 font-light">
                   0{i + 1}
                 </span>
                 <h3 className="font-display text-2xl font-light text-brand-off-white mt-4 mb-3">

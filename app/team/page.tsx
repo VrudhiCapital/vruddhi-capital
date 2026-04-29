@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const teamMembers = [
   {
-    name: "Roshan Bava",
+    name: "Roshan ",
     role: "Co-founder & Investor, Vruddhi Capital",
     bio: [
       "Roshan Bava is an entrepreneur-turned-investor with a proven track record of building and scaling technology-led businesses. He is the co-founder of Niveus Solutions, which grew into a leading cloud engineering firm before being acquired by NTT Data in 2025.",
@@ -18,7 +18,7 @@ const teamMembers = [
       "He is deeply committed to supporting ventures that align growth with sustainability, ethical execution, and real-world impact. Roshan works closely with founders through key inflection points, helping them scale with discipline while staying anchored to purpose.",
     ],
     // focus: ["Consumer", "Fintech"],
-    photo: "/Team/Roshan.png",
+    // photo: "/Team/Roshan.png",
     initials: "TM",
     // linkedin: "https://www.linkedin.com/in/yourprofile",
   },
@@ -106,22 +106,8 @@ export default function TeamPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {teamMembers.map((member, i) => (
               <div key={i} className="card-dark p-6 group flex flex-col">
-                <div className="w-20 h-20 rounded-full border border-brand-orange/40 overflow-hidden mb-6 group-hover:border-brand-orange transition-colors duration-300 flex items-center justify-center flex-shrink-0">
-                  {member.photo ? (
-                    <Image
-                      src={member.photo}
-                      alt={member.name}
-                      width={80}
-                      height={80}
-                      className="w-full h-full object-cover object-top"
-                    />
-                  ) : (
-                    <span className="font-display text-2xl font-light text-brand-orange">
-                      {member.initials}
-                    </span>
-                  )}
-                </div>
-                <h3 className="font-display text-xl font-light text-brand-off-white mb-1">
+                
+                <h3 className="font-display text-3xl font-light text-brand-off-white mb-1">
                   {member.name}
                 </h3>
                 <p className="font-body text-xs tracking-widest uppercase text-brand-orange mb-6">

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 // Investment thesis sectors
 const sectors = [
   {
-    title: "Consumer",
+    title: "Products",
     description:
       "Brands and products solving real problems for India's growing consumer class in underpenetrated markets.",
     icon: "01",
@@ -63,9 +63,9 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-20 text-center">
 
           {/* Tag line pill */}
-          <div className="inline-flex items-center  border border-brand-orange/30 px-5 py-2 mb-10 animate-fade-in">
+          <div className="inline-flex items-center  border border-brand-orange/30 px-20 py-5 mb-10 animate-fade-in">
             <span className=" rounded-full bg-brand-orange animate-pulse" />
-            <span className="font-body text-xs tracking-widest uppercase text-brand-orange">
+            <span className=" font-body text-[30px] font-bold font-body text-xs tracking-widest uppercase text-brand-orange">
             Investment Firm 
             </span>
           </div>
@@ -197,7 +197,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {sectors.map((sector, i) => (
               <div key={i} className="card-dark p-8 lg:p-10 group">
-                <span className="font-display text-5xl font-light text-brand-orange/20 group-hover:text-brand-orange/40 transition-colors duration-300">
+                <span className="font-display text-5xl font-light text-brand-orange/80 group-hover:text-brand-orange/100 transition-colors duration-300">
                   {sector.icon}
                 </span>
                 <h3 className="font-display text-2xl font-light text-brand-off-white mt-4 mb-4">

@@ -22,7 +22,7 @@ const portfolioCompanies = [
     stage: "Seed",
     description: "EasyEvents is a customer-facing event management platform by Clinking Goblets Celebrifi Pvt. Ltd. that helps users discover and book event services easily. It connects customers with vendors, venues, and planners for a seamless event planning experience.",
     location: "Bengaluru, India",
-    logo: "/Company/Easy-Events.webp",
+    logo: "/Company/Easy-Events.jpg",
   },
 
   {
@@ -31,9 +31,9 @@ const portfolioCompanies = [
     stage: "Seed",
     description: "FusionStays is a travel and hospitality platform that connects travelers with verified homestays across offbeat destinations, offering curated and authentic local experiences.",
     location: "Kolkata, West Bengal, India",
-    logo: "/Company/FusionStays.webp",
+    logo: "/Company/FusionStays.jpg",
   },
-  
+
   {
     name: "Neo Wealth ",
     sector: "Services",
@@ -42,9 +42,9 @@ const portfolioCompanies = [
     location: "Mumbai, India",
     logo: "/Company/neo.png",
   },
-  
-  
-  
+
+
+
   {
     name: "Yutori Designs",
     sector: "Services",
@@ -53,11 +53,11 @@ const portfolioCompanies = [
     location: "Udupi, India",
     logo: "/Company/Yutori-logo.png",
   },
- 
+
 ];
 
 const sectorColors: Record<string, string> = {
- Products: "text-blue-400 border-blue-400/30 bg-blue-400/5",
+  Products: "text-blue-400 border-blue-400/30 bg-blue-400/5",
   Platforms: "text-purple-400 border-purple-400/30 bg-purple-400/5",
   Services: "text-green-400 border-green-400/30 bg-green-400/5",
 };
@@ -71,8 +71,8 @@ export default function PortfolioPage() {
     activeFilter === "All"
       ? portfolioCompanies
       : portfolioCompanies.filter(
-          (company) => company.sector === activeFilter
-        );
+        (company) => company.sector === activeFilter
+      );
 
   return (
     <>
@@ -102,11 +102,10 @@ export default function PortfolioPage() {
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`font-body text-xs tracking-widest uppercase px-4 py-2 border transition-colors duration-300 cursor-pointer ${
-                  activeFilter === filter
+                className={`font-body text-xs tracking-widest uppercase px-4 py-2 border transition-colors duration-300 cursor-pointer ${activeFilter === filter
                     ? "border-brand-orange text-brand-orange bg-brand-orange/5"
                     : "border-[#2A2A2A] text-brand-gray-light hover:border-brand-orange/40"
-                }`}
+                  }`}
               >
                 {filter}
               </button>
@@ -119,18 +118,18 @@ export default function PortfolioPage() {
               <div key={i} className="card-dark p-8 group flex flex-col">
 
                 {/* Company logo */}
-                <div className="w-28 h-14 mb-5 flex items-center">
+                <div className="w-40 h-20 mb-5 flex items-center">
                   {company.logo ? (
                     <Image
                       src={company.logo}
                       alt={`${company.name} logo`}
-                      width={112}
-                      height={56}
+                      width={160}
+                      height={80}
                       className="object-contain w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-300"
                     />
                   ) : (
-                    <div className="w-14 h-14 border border-brand-orange/30 flex items-center justify-center group-hover:border-brand-orange transition-colors duration-300">
-                      <span className="font-display text-2xl font-light text-brand-orange">
+                    <div className="w-20 h-20 border border-brand-orange/30 flex items-center justify-center group-hover:border-brand-orange transition-colors duration-300">
+                      <span className="font-display text-3xl font-light text-brand-orange">
                         {company.name.charAt(0)}
                       </span>
                     </div>
@@ -147,9 +146,8 @@ export default function PortfolioPage() {
 
                 <div className="flex items-center justify-between pt-6 border-t border-[#1E1E1E]">
                   <span
-                    className={`font-body text-xs tracking-widest uppercase px-3 py-1 border ${
-                      sectorColors[company.sector]
-                    }`}
+                    className={`font-body text-xs tracking-widest uppercase px-3 py-1 border ${sectorColors[company.sector]
+                      }`}
                   >
                     {company.sector}
                   </span>

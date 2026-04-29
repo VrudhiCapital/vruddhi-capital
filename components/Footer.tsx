@@ -14,7 +14,7 @@ export default function Footer() {
               alt="Logo"
               width={140}
               height={50}
-              className="h-10 w-auto object-contain mb-6"
+              className="h-16 w-auto object-contain mb-6"
             />
             <p className="body-text max-w-sm mb-6">
               Backing mission-driven founders building scalable businesses

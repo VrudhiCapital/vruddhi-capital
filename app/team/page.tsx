@@ -23,7 +23,7 @@ const teamMembers = [
     // linkedin: "https://www.linkedin.com/in/yourprofile",
   },
   {
-    name: "Rashmi George",
+    name: "Rashmi ",
     role: "Co-founder & Investor, Vruddhi Capital",
     bio: [
       "Rashmi George is a serial entrepreneur and investor known for building scalable, execution-led technology businesses. She co-founded Niveus Solutions, which became one of India’s leading cloud services firms prior to its acquisition by NTT Data.",
@@ -49,7 +49,7 @@ const teamMembers = [
   //   // linkedin: "https://www.linkedin.com/in/yourprofile",
   // },
     {
-    name: "Sandeep Prabhu K",
+    name: "Sandeep",
     role: "Head of Investments, Vruddhi Capital",
     bio: [
       "Sandeep Prabhu K is a finance and transaction specialist with over 16 years of experience in M&A, acquisitions, tax, and regulatory advisory. He has advised on 300+ transactions across sectors including IT, real estate, pharmaceuticals, manufacturing, and e-commerce.",

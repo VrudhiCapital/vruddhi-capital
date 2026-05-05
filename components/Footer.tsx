@@ -58,10 +58,10 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li>
                 <a
-                  href="mailto:info@vruddhicapital.com"
+                  href="mailto:roshan@vruddhicapital.com"
                   className="font-body text-sm text-brand-gray-light hover:text-brand-orange transition-colors duration-300"
                 >
-                  info@vruddhicapital.com
+                  roshan@vruddhicapital.com
                 </a>
               </li>
               <li>

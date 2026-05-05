@@ -82,7 +82,7 @@ export default function ContactForm() {
           We have received your pitch. Our team will review it and reach out
           to you if there is a fit. This usually takes 5–7 business days.
           If you face any kind of problem, please drop a mail to{" "}
-          <a href="mailto:roshan@vruddhicapital.com" className="text-blue-600 underline">
+          <a href="mailto:roshan@vruddhicapital.com" className="text-brand-orange underline">
             roshan@vruddhicapital.com
           </a>
         </p>

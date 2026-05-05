@@ -81,6 +81,10 @@ export default function ContactForm() {
         <p className="body-text mb-8">
           We have received your pitch. Our team will review it and reach out
           to you if there is a fit. This usually takes 5–7 business days.
+          If you face any kind of problem, please drop a mail to{" "}
+          <a href="mailto:roshan@vruddhicapital.com" className="text-blue-600 underline">
+            roshan@vruddhicapital.com
+          </a>
         </p>
         <button
           onClick={() => setStatus("idle")}
@@ -176,7 +180,7 @@ export default function ContactForm() {
             <option value="Consumer">Products</option>
             <option value="Platform">Platforms</option>
             <option value="Services">Services</option>
-            
+
             <option value="Other">Other</option>
           </select>
         </div>

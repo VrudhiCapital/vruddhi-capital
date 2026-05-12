@@ -5,6 +5,9 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vruddhicapital.com"),
+  verification: {
+    google: "v3P89vQQrTjkfr9qbS1JVJDvFuhR1BL2FcPqvNli1Sg",
+  },
   title: {
     default: "Vruddhi Capital — Backing Mission-Driven Founders in India",
     template: "%s | Vruddhi Capital",

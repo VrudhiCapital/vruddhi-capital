@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vruddhicapital.com"),
@@ -69,20 +70,37 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico.ico" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="grain-overlay">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
-  );
+return (
+  <html lang="en">
+    <head>
+      <link rel="icon" href="/favicon.ico.ico" />
+
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+      />
+
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-3EBT2B308M"
+        strategy="afterInteractive"
+      />
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3EBT2B308M');
+        `}
+      </Script>
+    </head>
+
+    <body className="grain-overlay">
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
+    </body>
+  </html>
+);
 }
